@@ -37,9 +37,9 @@ async function main() {
 
 
     const dataV2 = {
-        name: "Gizmooooo Coin",
-        symbol: "$GIZMOOOOO",
-        uri: "https://5ccwmdhforuyru3bwywsd2ilylllfwizxryzdjcvlyteshacee.arweave.net/6IVmDOV0aYjTYbYtIekLwtay2Rm8cZ-GkVV4mSRwCIY",
+        name: "Lord Dexter Token",
+        symbol: "$LDEX",
+        uri: "https://gateway.pinata.cloud/ipfs/QmYUbTrhfCPPSbeZgdj1RWX5b5gMtQ8hQe6EtSSSt9FmKn?_gl=1*18pyw3y*rs_ga*NTM0MTQ1ODMtYTA5Zi00NzgzLWFkNWUtM2VmYjZkNTE5NmRj*rs_ga_5RMPXG14TE*MTY4MTA2NDA2Ny4xLjEuMTY4MTA2NDE2Ni4yMi4wLjA.",
         // we don't need that
         sellerFeeBasisPoints: 0,
         creators: null,
@@ -76,7 +76,7 @@ async function main() {
 
     const tx = new web3.Transaction();
     tx.add(ix);
-    const connection = new web3.Connection("https://api.devnet.solana.com");
+    const connection = new web3.Connection("https://api.mainnet.solana.com");
     const txid = await web3.sendAndConfirmTransaction(connection, tx, [myKeypair]);
     console.log(txid);
 

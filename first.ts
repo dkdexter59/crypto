@@ -15,7 +15,7 @@ export function loadWalletKey(keypairFile: string): web3.Keypair {
 async function main() {
     console.log("Let's name some tokens");
 
-    const myKeypair = loadWalletKey("GmP636mF3GPHx5Wum7UscqJXatNXC742B7hyDDncEXxR.json")
+    const myKeypair = loadWalletKey("Dc5gWv6zEVfeFF44XFyrtRGvyqTt1NPeZT3FGWNWUmCn.json")
     console.log(myKeypair.publicKey.toBase58())
     const mint = new web3.PublicKey("Dbfcjo6PaeMbKhdGsDAa54r2kyEff66koZ7fXosCHpJv")
 
